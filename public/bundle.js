@@ -25523,9 +25523,8 @@
 	        location: location,
 	        temp: temp
 	      });
-	    }, function (err) {
-	      alert(err);
-	    });
+	    }).catch(err);
+	    alert(err);
 	  },
 	  render: function render() {
 	    return React.createElement(
