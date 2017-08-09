@@ -1376,13 +1376,13 @@
 /* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar React = __webpack_require__(147);\nvar Nav = __webpack_require__(223);\n\nvar Main = React.createClass({\n  displayName: 'Main',\n\n  render: function render() {\n    return React.createElement(\n      'div',\n      null,\n      React.createElement(Nav, null),\n      React.createElement(\n        'h3',\n        null,\n        'Main component'\n      ),\n      this.props.children\n    );\n  }\n});\n\nmodule.exports = Main;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/Main.jsx\n// module id = 222\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/Main.jsx?");
+	eval("'use strict';\n\nvar React = __webpack_require__(147);\nvar Nav = __webpack_require__(223);\n\n// var Main = React.createClass({\n//   render: function() {\n//     return (\n//       <div>\n//         <Nav/>\n//         <h3>Main component</h3>\n//         {this.props.children}\n//       </div>\n//     );\n//   }\n// });\n\nvar Main = function Main(props) {\n  return React.createElement(\n    'div',\n    null,\n    React.createElement(Nav, null),\n    React.createElement(\n      'h3',\n      null,\n      'Main component'\n    ),\n    props.children\n  );\n};\n\nmodule.exports = Main;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/Main.jsx\n// module id = 222\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/Main.jsx?");
 
 /***/ }),
 /* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar React = __webpack_require__(147);\n\nvar _require = __webpack_require__(159),\n    Link = _require.Link,\n    IndexLink = _require.IndexLink;\n\nvar Nav = React.createClass({\n  displayName: 'Nav',\n\n  render: function render() {\n    return React.createElement(\n      'div',\n      null,\n      React.createElement(\n        'h3',\n        null,\n        'Nav component'\n      ),\n      React.createElement(\n        IndexLink,\n        { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },\n        'Get Weather'\n      ),\n      React.createElement(\n        Link,\n        { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },\n        'About'\n      ),\n      React.createElement(\n        Link,\n        { to: '/examples', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },\n        'Examples'\n      )\n    );\n  }\n});\n\nmodule.exports = Nav;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/Nav.jsx\n// module id = 223\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/Nav.jsx?");
+	eval("'use strict';\n\nvar React = __webpack_require__(147);\n\nvar _require = __webpack_require__(159),\n    Link = _require.Link,\n    IndexLink = _require.IndexLink;\n\n// var Nav = React.createClass({\n//   render: function() {\n//     return (\n//       <div>\n//         <h3>Nav component</h3>\n//         <IndexLink to='/' activeClassName='active' activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink>\n//         <Link to='/about' activeClassName='active' activeStyle={{fontWeight: 'bold'}}>About</Link>\n//         <Link to='/examples' activeClassName='active' activeStyle={{fontWeight: 'bold'}}>Examples</Link>\n//       </div>\n//     );\n//   }\n// });\n\nvar Nav = function Nav(props) {\n  return React.createElement(\n    'div',\n    null,\n    React.createElement(\n      'h3',\n      null,\n      'Nav component'\n    ),\n    React.createElement(\n      IndexLink,\n      { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },\n      'Get Weather'\n    ),\n    React.createElement(\n      Link,\n      { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },\n      'About'\n    ),\n    React.createElement(\n      Link,\n      { to: '/examples', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },\n      'Examples'\n    )\n  );\n};\n\nmodule.exports = Nav;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/Nav.jsx\n// module id = 223\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/Nav.jsx?");
 
 /***/ }),
 /* 224 */
@@ -1400,7 +1400,7 @@
 /* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar React = __webpack_require__(147);\n\nvar WeatherMessage = React.createClass({\n  displayName: 'WeatherMessage',\n\n  render: function render() {\n    return React.createElement(\n      'p',\n      null,\n      'It\\'s ',\n      this.props.temp,\n      ' in ',\n      this.props.location\n    );\n  }\n});\n\nmodule.exports = WeatherMessage;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/WeatherMessage.jsx\n// module id = 226\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/WeatherMessage.jsx?");
+	eval("'use strict';\n\nvar React = __webpack_require__(147);\n\n// var WeatherMessage = React.createClass({\n//   render: function() {\n//     return (\n//       <p>It's {this.props.temp} in {this.props.location}</p>\n//     );\n//   }\n// });\n\nvar WeatherMessage = function WeatherMessage(props) {\n  return React.createElement(\n    'p',\n    null,\n    'It\\'s ',\n    props.temp,\n    ' in ',\n    props.location\n  );\n};\n\nmodule.exports = WeatherMessage;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/WeatherMessage.jsx\n// module id = 226\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/WeatherMessage.jsx?");
 
 /***/ }),
 /* 227 */
@@ -1514,13 +1514,13 @@
 /* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar React = __webpack_require__(147);\n\nvar About = React.createClass({\n  displayName: 'About',\n\n  render: function render() {\n    return React.createElement(\n      'h3',\n      null,\n      'About component'\n    );\n  }\n});\n\nmodule.exports = About;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/About.jsx\n// module id = 245\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/About.jsx?");
+	eval("'use strict';\n\nvar React = __webpack_require__(147);\n\n// var About = React.createClass({\n//   render: function() {\n//     return (\n//       <h3>About component</h3>\n//     );\n//   }\n// });\n\nvar About = function About(props) {\n  return React.createElement(\n    'h3',\n    null,\n    'About component'\n  );\n};\n\nmodule.exports = About;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/About.jsx\n// module id = 245\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/About.jsx?");
 
 /***/ }),
 /* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar React = __webpack_require__(147);\n\nvar Examples = React.createClass({\n  displayName: 'Examples',\n\n  render: function render() {\n    return React.createElement(\n      'h3',\n      null,\n      'Examples component'\n    );\n  }\n});\n\nmodule.exports = Examples;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/Examples.jsx\n// module id = 246\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/Examples.jsx?");
+	eval("'use strict';\n\nvar React = __webpack_require__(147);\n\n// var Examples = React.createClass({\n//   render: function() {\n//     return (\n//       <h3>Examples component</h3>\n//     );\n//   }\n// });\n\nvar Examples = function Examples(props) {\n  return React.createElement(\n    'h3',\n    null,\n    'Examples component'\n  );\n};\n\nmodule.exports = Examples;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/Examples.jsx\n// module id = 246\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/Examples.jsx?");
 
 /***/ })
 /******/ ]);
