@@ -1514,13 +1514,13 @@
 /* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar React = __webpack_require__(147);\n\n// var About = React.createClass({\n//   render: function() {\n//     return (\n//       <h3>About component</h3>\n//     );\n//   }\n// });\n\nvar About = function About(props) {\n  return React.createElement(\n    'h3',\n    null,\n    'About component'\n  );\n};\n\nmodule.exports = About;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/About.jsx\n// module id = 245\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/About.jsx?");
+	eval("'use strict';\n\nvar React = __webpack_require__(147);\n\n// var About = React.createClass({\n//   render: function() {\n//     return (\n//       <h3>About component</h3>\n//     );\n//   }\n// });\n\nvar About = function About(props) {\n  return React.createElement(\n    'div',\n    null,\n    React.createElement(\n      'h3',\n      null,\n      'About'\n    ),\n    React.createElement(\n      'p',\n      null,\n      'Welcome to the About page'\n    )\n  );\n};\n\nmodule.exports = About;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/About.jsx\n// module id = 245\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/About.jsx?");
 
 /***/ }),
 /* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar React = __webpack_require__(147);\n\n// var Examples = React.createClass({\n//   render: function() {\n//     return (\n//       <h3>Examples component</h3>\n//     );\n//   }\n// });\n\nvar Examples = function Examples(props) {\n  return React.createElement(\n    'h3',\n    null,\n    'Examples component'\n  );\n};\n\nmodule.exports = Examples;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/Examples.jsx\n// module id = 246\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/Examples.jsx?");
+	eval("'use strict';\n\nvar React = __webpack_require__(147);\n\n// var Examples = React.createClass({\n//   render: function() {\n//     return (\n//       <h3>Examples component</h3>\n//     );\n//   }\n// });\n\nvar Examples = function Examples(props) {\n  return React.createElement(\n    'h3',\n    null,\n    'Examples'\n  );\n};\n\nmodule.exports = Examples;\n\n//////////////////\n// WEBPACK FOOTER\n// ./app/components/Examples.jsx\n// module id = 246\n// module chunks = 0\n//# sourceURL=webpack:///./app/components/Examples.jsx?");
 
 /***/ })
 /******/ ]);
