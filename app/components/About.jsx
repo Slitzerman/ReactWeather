@@ -4,7 +4,7 @@ var {a} = require('react-router');
 var About = (props) => {
   return (
     <div className='row'>
-        <h3 className='text-center'>ReactWeather App</h3>
+        <h3 className='text-center page-title'>ReactWeather App</h3>
         <p>An app built using
           <a href='https://facebook.github.io/react/' target='_blank'> React </a>
           where you can fetch the current weather of your chosen location.</p>
