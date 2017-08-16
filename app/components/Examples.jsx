@@ -6,7 +6,7 @@ var Examples = (props) => {
   return (
     <die>
       <h1 className='text-center page-title'>Examples</h1>
-      <p>Here's a few locations to rty out:</p>
+      <p>Here's a few locations to try out:</p>
       <ol>
         <li>
           <Link to='/?location=Kemi'>Kemi, FI</Link>
